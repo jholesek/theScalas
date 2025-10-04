@@ -1,0 +1,2 @@
+# theScalas
+Scala learning examples
