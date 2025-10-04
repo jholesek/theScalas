@@ -5,4 +5,27 @@ scala> sum(2,4)
 val res0: Int = 6
 
 scala> 
+scala> val b = BigInt(1_123_456_789)
+val b: scala.math.BigInt = 1123456789
+
+scala> println(s"The bigint $b")
+The bigint 1123456789
+
+scala> val quote="""This is a long
+     | long long long
+     | long string."""
+val quote: String =
+This is a long
+long long long
+long string.
+
+scala> val a = 20
+val a: Int = 20
+
+scala> val b = 10
+val b: Int = 10
+
+scala> val x = if (a < b) { a } else { b }
+val x: Int = 10
+
 
