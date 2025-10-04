@@ -1,0 +1,8 @@
+scala> def sum(a: Int, b: Int): Int = a+b
+def sum(a: Int, b: Int): Int
+
+scala> sum(2,4)
+val res0: Int = 6
+
+scala> 
+
