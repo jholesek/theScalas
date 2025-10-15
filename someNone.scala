@@ -5,4 +5,9 @@ def makeInt(s: String): Option[Int] =
     case e: Exception => None
   }
 
+val a = makeInt("1")
+val b = makeInt("one")
+
+println("a = ",a)
+println("b = ",b)
 
