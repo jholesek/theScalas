@@ -12,3 +12,10 @@ trait Runner {
   def stopRun(): Unit = println("Stopped running.")
 }
 
+class Dog(name: String) extends Speaker with TailWagger with Runner {
+  def speak(): String = "Woof!"
+}
+
+val d = new Dog("Rover")
+println(d.speak())
+
