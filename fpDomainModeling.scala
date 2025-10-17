@@ -1,23 +1,13 @@
-sealed abstract class CrustSize
-object CrustSize {
-  case object Small extends CrustSize
-  case object Medium extends CrustSize
-  case object Large extends CrustSize
+import CrustSize._
+
+val currentCrustSize = Small
+
+currentCrustSize match {
+  case Small => println("Small crust")
+//  case Medium => println("Medium crust")
+//  case Large => println("Large crust")
 }
 
-sealed abstract class CrustType
-object CrustType {
-  case object Thin extends CrustType
-  case object Thick extends CrustType
-  case object Regular extends CrustType
-}
+if (currentCrustSize == Small) println("Still small crust.")
 
-sealed abstract class Topping
-object Topping {
-  case object Cheese extends Topping
-  case object Pepperoni extends Topping
-  case object BlackOlives extends Topping
-  case object GreenOlives extends Topping
-  case object Onions extends Topping
-}
 
