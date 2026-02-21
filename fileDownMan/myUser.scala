@@ -3,8 +3,10 @@ case class myUser(
         email: String,
         groups: Set[myGroup]
       )
-      {
-              def addGroup(group: myGroup): myUser =
-                      copy(groups = groups + group)
-      }
+
+object myUser {
+              def addGroup(user: myUser , group: myGroup): myUser =
+                      user.copy(groups = user.groups + group)
+}
+
 

@@ -22,10 +22,8 @@ val fupd = f.copy(groups = f.groups + g)
 
 println(fupd)
 
-val updatedU =
-        u
-        .addGroup(myGroup("Silver tier"))
-        .addGroup(myGroup("Gold tier"))
+val updatedU = myUser.addGroup(u, myGroup("Silver tier"))
+val updatedU1 = myUser.addGroup(u, myGroup("Gold tier"))
 
 println(updatedU)
 
